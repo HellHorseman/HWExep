@@ -6,9 +6,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             signUp("java_skypro_go", "D_1hWiKjjP_9", "D_1hWiKjjP_9");
-        } catch (LoginException e) {
-            System.out.println(e.getMessage());
-        } catch (PasswordException e) {
+        } catch (LoginException | PasswordException e) {
             System.out.println(e.getMessage());
         } finally {
             System.out.println("Method done!");
